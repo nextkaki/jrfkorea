@@ -17,12 +17,11 @@
                     <header>
                         <h3>Customer Service Center</h3>
                         <h2>+82-2-6927-3477</h2>
+                        <P>
                         <a id="kakao-link-btn" href="javascript:;">
-						<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+						<img src="resources/images/kakaotalk.png"/>
 						</a>
-						<div class="fb-share-button" data-href="http://jrfkorea.coj.kr/" data-layout="button" data-size="large">
-						<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjrfkorea.coj.kr%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기
-						</a></div>
+						<a href="javascript:toSNS('facebook','JRFKOREA','http://jrfkorea.coj.kr/')" title="페이스북으로 가져가기"><img src="resources/images/facebook.png"></a>
 						<a href="javascript:toSNS('twitter','JRFKOREA','http://jrfkorea.coj.kr/')" title="트위터로 가져가기"><img src="resources/images/twitter.png"></a>
 						<a href="javascript:toSNS('band','JRFKOREA','http://jrfkorea.coj.kr/')" title="밴드로 가져가기"><img src="resources/images/band.png"></a>																		
                     </header>
