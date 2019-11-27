@@ -16,14 +16,7 @@
                 <section class="contact">
                     <header>
                         <h3>Customer Service Center</h3>
-                        <h2>+82-2-6927-3477</h2>
-                        <P>
-                        <a id="kakao-link-btn" href="javascript:;">
-						<img src="resources/images/kakaotalk.png"/>
-						</a>
-						<a href="javascript:toSNS('facebook','JRFKOREA','http://jrfkorea.coj.kr/')" title="페이스북으로 가져가기"><img src="resources/images/facebook.png"></a>
-						<a href="javascript:toSNS('twitter','JRFKOREA','http://jrfkorea.coj.kr/')" title="트위터로 가져가기"><img src="resources/images/twitter.png"></a>
-						<a href="javascript:toSNS('band','JRFKOREA','http://jrfkorea.coj.kr/')" title="밴드로 가져가기"><img src="resources/images/band.png"></a>																		
+                        <h2>+82-2-6927-3477</h2>																					
                     </header>
                     <p>Weekdays : 09:00 - 19:00</p>
                     <p>Weekends / Holidays : 10:00 - 19:00</p>
@@ -32,6 +25,16 @@
                         <span style="margin-right: 10px"><strong>Fax</strong> . +82-2-6927-3488</span>
                         <span><strong>Email</strong> . info@jpremit.com</span>
                     </p>
+                    <p>Share:</p>
+                                        <a id="kakao-link-btn" href="javascript:;">
+						<img src="resources/images/kakaotalk.png"/>
+						</a>
+						<a href="javascript:toSNS('facebook','JRFKOREA','http://jrfkorea.coj.kr/')" title="페이스북으로 가져가기"><img src="resources/images/facebook.png"></a>
+						<a href="javascript:toSNS('twitter','JRFKOREA','http://jrfkorea.coj.kr/')" title="트위터로 가져가기"><img src="resources/images/twitter.png"></a>
+						<a href="javascript:toSNS('band','JRFKOREA','http://jrfkorea.coj.kr/')" title="밴드로 가져가기"><img src="resources/images/band.png"></a>
+						<a href="javascript:toSNS('blog','JRFKOREA','http://jrfkorea.coj.kr/')" title="네이버블로그로 가져가기"><img src="resources/images/blog.png"></a>																					
+						<a href="javascript:toSNS('line','JRFKOREA','http://jrfkorea.coj.kr/')" title="라인으로 가져가기"><img src="resources/images/LINE.png"></a>																					
+						<a href="javascript:toSNS('google','JRFKOREA','http://jrfkorea.coj.kr/')" title="구글플러스로 가져가기"><img src="resources/images/google.png"></a>                    
                 </section>
 
 
@@ -97,11 +100,9 @@
 		var image = "이미지경로"; 
         snsArray['twitter'] = "http://twitter.com/home?status=" + encodeURIComponent(strTitle) + ' ' + encodeURIComponent(strURL);
         snsArray['facebook'] = "http://www.facebook.com/share.php?u=" + encodeURIComponent(strURL);
-		snsArray['pinterest'] = "http://www.pinterest.com/pin/create/button/?url=" + encodeURIComponent(strURL) + "&media=" + image + "&description=" + encodeURIComponent(strTitle);
 		snsArray['band'] = "http://band.us/plugin/share?body=" + encodeURIComponent(strTitle) + "  " + encodeURIComponent(strURL) + "&route=" + encodeURIComponent(strURL);
         snsArray['blog'] = "http://blog.naver.com/openapi/share?url=" + encodeURIComponent(strURL) + "&title=" + encodeURIComponent(strTitle);
         snsArray['line'] = "http://line.me/R/msg/text/?" + encodeURIComponent(strTitle) + " " + encodeURIComponent(strURL);
-		snsArray['pholar'] = "http://www.pholar.co/spi/rephol?url=" + encodeURIComponent(strURL) + "&title=" + encodeURIComponent(strTitle);
 		snsArray['google'] = "https://plus.google.com/share?url=" + encodeURIComponent(strURL) + "&t=" + encodeURIComponent(strTitle);
         window.open(snsArray[sns]);
     } 
