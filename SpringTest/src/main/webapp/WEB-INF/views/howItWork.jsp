@@ -115,8 +115,9 @@
 
             </div>
 
-        <div style="padding-left: 150px; padding-right: 150px; height: 300px;">
+        <div style="padding-left: 150px; padding-right: 150px; height: 650px;">
             <header style="text-align: center;">
+            	<br><br><br>
                 <h2>Partners</h2>
             </header>
 
