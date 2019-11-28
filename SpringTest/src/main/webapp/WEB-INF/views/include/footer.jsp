@@ -104,7 +104,8 @@
         snsArray['blog'] = "http://blog.naver.com/openapi/share?url=" + encodeURIComponent(strURL) + "&title=" + encodeURIComponent(strTitle);
         snsArray['line'] = "http://line.me/R/msg/text/?" + encodeURIComponent(strTitle) + " " + encodeURIComponent(strURL);
 		snsArray['google'] = "https://plus.google.com/share?url=" + encodeURIComponent(strURL) + "&t=" + encodeURIComponent(strTitle);
-        window.open(snsArray[sns]);
+        //window.open(snsArray[sns]);
+		showPopup(snsArray[sns]); //팝업창으로 띄우기
     } 
     function copy_clip(url) {
         var IE = (document.all) ? true : false;
@@ -115,5 +116,10 @@
             temp = prompt("이 글의 단축url입니다. Ctrl+C를 눌러 클립보드로 복사하세요", url);
         }
     }
+    
+	  function showPopup(url) 
+	  {
+		  window.open(url, "a", "width=600, height=600, left=100, top=50"); 
+		  } 
 
 </script>
