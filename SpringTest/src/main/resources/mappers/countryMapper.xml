@@ -28,5 +28,15 @@
 		
 		  	[JRf_Korea_Uat].[dbo].[agentCurrencyRate]
 	</select>	
+	
+	<select id="getLastUpdateDate" resultType="String">
+		SELECT 
+		    
+		    MAX(convert(varchar, [update_ts], 111)) AS lastUpdate
+		  
+		  FROM 
+		    
+		    [JRf_Korea_Uat].[dbo].[agentCurrencyRate];
+	</select>	
 
 </mapper>

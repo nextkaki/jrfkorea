@@ -24,5 +24,10 @@ public class CountriesDAOImpl implements CountriesDAO {
 	public List<CountriesDTO> getTodayRateList() throws Exception {
 		return sqlSession.selectList("countryMapper.getTodayRateList");
 	}
+	
+	@Override
+	public String getLastUpdateDate() throws Exception {
+		return sqlSession.selectOne("countryMapper.getLastUpdateDate");
+	}
 
 }

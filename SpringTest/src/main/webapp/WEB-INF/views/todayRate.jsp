@@ -40,7 +40,8 @@
                             <h2>Today Rate</h2>
                         </header>
                         <section>
-                            <p>Last Update : </p>
+                            <p>Last Update : ${lastUpdate}</p>
+                            
                             <div>
                             <table class="default">
 	                            <thead>

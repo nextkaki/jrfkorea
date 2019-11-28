@@ -28,9 +28,11 @@ public class TodayRateController {
 		logger.info("TodayRate Page Success.");
 		
 		List<CountriesDTO> list = countriesDAO.getTodayRateList();
+		String lastUpdate = countriesDAO.getLastUpdateDate();
 		
 		if(list.size() > 0) {
 			model.addAttribute("list", list);
+			model.addAttribute("lastUpdate", lastUpdate);
 		}
 		
 		return "todayRate";
