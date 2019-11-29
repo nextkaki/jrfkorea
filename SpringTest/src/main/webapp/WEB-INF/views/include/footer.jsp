@@ -105,7 +105,7 @@
         snsArray['line'] = "http://line.me/R/msg/text/?" + encodeURIComponent(strTitle) + " " + encodeURIComponent(strURL);
 		snsArray['google'] = "https://plus.google.com/share?url=" + encodeURIComponent(strURL) + "&t=" + encodeURIComponent(strTitle);
         //window.open(snsArray[sns]);
-		showPopup(snsArray[sns]); //팝업창으로 띄우기
+		SNSPopup(snsArray[sns]); //팝업창으로 띄우기
     } 
     function copy_clip(url) {
         var IE = (document.all) ? true : false;
@@ -117,7 +117,7 @@
         }
     }
     
-	  function showPopup(url) 
+	  function SNSPopup(url) 
 	  {
 		  window.open(url, "a", "width=600, height=600, left=100, top=50"); 
 		  } 
