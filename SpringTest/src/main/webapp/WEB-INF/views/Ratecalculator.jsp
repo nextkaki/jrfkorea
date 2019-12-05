@@ -2,6 +2,16 @@
 <%@ page session="false" pageEncoding="utf-8" %>
 <html>
 	<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154000930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154000930-1');
+</script>
+	
 		<link href="https://fonts.googleapis.com/css?family=Paytone+One|Staatliches|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 		<title>Select Box - CSS</title>
 		<style>
