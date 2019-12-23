@@ -14,8 +14,8 @@
 
 		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
 
-	  	<property name="url" value="jdbc:sqlserver://223.26.180.29:1433;databaseName=JRF_Korea_Uat" />
-	<!-- 	<property name="url" value="jdbc:sqlserver://192.168.100.12:1433;databaseName=JRF_Korea_Uat" /> -->
+	<property name="url" value="jdbc:sqlserver://223.26.180.29:1433;databaseName=JRF_Korea_Uat" />  
+<!--<property name="url" value="jdbc:sqlserver://192.168.100.12:1433;databaseName=JRF_Korea_Uat" />-->
 		<property name="username" value="JRF_Korea" />
 
 		<property name="password" value="jrfkorea#123" />
