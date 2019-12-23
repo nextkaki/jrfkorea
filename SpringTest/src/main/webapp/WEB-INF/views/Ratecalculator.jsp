@@ -145,6 +145,47 @@
 	</script>		
 	</head>
 	<body bgcolor="#FFFFFF">
+	
+	<div class="money-infor">
+		<!-- money-infor-inner -->
+		<div class="money-infor-inner deposit">
+			<p class="money-title" style="font-size: 20px;color: #000;font-weight: 600;">
+				입금액
+				<span style="font-size: 16px;font-weight: normal;">(수수료 포함)</span>
+			</p>
+			<p id="deposit_error_txt" class="input-error-text" style="display: inline-block; height: 15"></p>
+			<div class="input-inbox ns-en">
+				<input type="text" id="deposit_amount" name="" value="">
+				<div class="flag-btn">
+					<a href="#">
+						<span class="flag-large kr"></span>
+						<span id="deposit_curr" class="flag-btn-txt">KRW</span><i class="icon-arrow"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--// money-infor-inner -->
+		<!-- money-infor-inner -->
+		<div class="money-infor-inner recipient">
+			<p class="money-title">받는 금액</p>
+			<p id="receive_error_txt" class="input-error-text" style="display: inline-block; height: 15"></p>
+			<div class="input-inbox ns-en">
+				<input type="text" id="receive_amount" name="" value="">
+				<div class="flag-btn recipient">
+					<input id="selected_reci_country_code" type="hidden" value="ph">
+					<a href="#">
+						<span class="flag-large ph"></span>
+						<span id="receive_curr" class="flag-btn-txt">PHP</span> <i class="icon-arrow"></i>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		<!--// money-infor-inner -->
+	</div>
+
+	
+	<!--  
 	<table>
 		<tr>
 			<td colspan ="3"><font color="#a97228" class="labels"><b>Receive</b></font></td>
@@ -194,6 +235,8 @@
 				<label><font color="#747474" class="labels">"+ Sending Fee : 5,000 KRW included"</font></label>
 		</tr>
 	</table>	
+	
+	-->
 		
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
