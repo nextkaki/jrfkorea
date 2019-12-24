@@ -3,6 +3,9 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Paytone+One|Staatliches|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">	
+		
 		<title>Select Box - CSS</title>
 		<style>
 			div#select_box {
@@ -80,7 +83,41 @@
 				font-family: 'Paytone One', sans-serif;
 				font-family: 'Staatliches', cursive;
 				font-size: 19px;
-			}			
+			}
+			#sendmoneys {
+				width: 100%;
+			    height: 70px;
+			    background-color: transparent;
+			    padding: 5px 0px;
+			    box-sizing: border-box;
+			    font-family: "Open Sans";
+			    font-size: 36px;
+			    font-weight: 700;
+			    color: #fff;
+			    outline: none !important;
+			    -webkit-appearance: none;
+    			-webkit-border-radius: 0;
+    			border: 0;
+    			vertical-align: middle;
+			}
+			.flag-btn{
+			    right: 0px;
+			    top: 0px;
+			    z-index: 1;
+			    width: 10px;
+			    height: 70px;
+			    box-sizing: border-box;
+			}
+			.money-title{
+				font-size: 20px;
+				color: #fff;
+				font-weight: 600;
+				font-family: 'Alatsi', sans-serif;
+			}
+			.money-infor{
+				background-color: transparent;
+				position:relative;
+			}
 						
 		</style>
 	<script>
@@ -144,40 +181,40 @@
 	
 	</script>		
 	</head>
-	<body bgcolor="#FFFFFF">
+	<body >
 	
-	<div class="money-infor">
+	<div class="money-infor" style="content: '';    display: block;    clear: both;display: block; border:2px solid #fff">
 		<!-- money-infor-inner -->
-		<div class="money-infor-inner deposit">
-			<p class="money-title" style="font-size: 20px;color: #000;font-weight: 600;">
+		<div class="money-infor-inner deposit"> 
+			<p class="money-title">
 				입금액
-				<span style="font-size: 16px;font-weight: normal;">(수수료 포함)</span>
+				<span style="font-size: 16px;font-weight: normal;font-family: 'Alatsi', sans-serif;">(수수료 포함)</span>
 			</p>
-			<p id="deposit_error_txt" class="input-error-text" style="display: inline-block; height: 15"></p>
-			<div class="input-inbox ns-en">
-				<input type="text" id="deposit_amount" name="" value="">
-				<div class="flag-btn">
-					<a href="#">
-						<span class="flag-large kr"></span>
-						<span id="deposit_curr" class="flag-btn-txt">KRW</span><i class="icon-arrow"></i>
-					</a>
-				</div>
+			
+			<div class="input-inbox ns-en" style="width:100%; 'height: 70px;box-sizing: border-box;border-bottom: 2px solid #fff;margin-top: 10px;">
+				<input type="text" id="sendmoneys" name="" value="100,000" onkeyup="cmaComma(this);">
+				<!-- <input type="text" id="sendmoneys" class="labels" style ="border: 1px solid #FFFFFF; height: 20%;" value="100,000" onkeyup="cmaComma(this);"/> -->
 			</div>
+			
 		</div>
 		<!--// money-infor-inner -->
 		<!-- money-infor-inner -->
-		<div class="money-infor-inner recipient">
+		
+		<div class="money-infor-inner recipient" >
 			<p class="money-title">받는 금액</p>
-			<p id="receive_error_txt" class="input-error-text" style="display: inline-block; height: 15"></p>
-			<div class="input-inbox ns-en">
-				<input type="text" id="receive_amount" name="" value="">
-				<div class="flag-btn recipient">
-					<input id="selected_reci_country_code" type="hidden" value="ph">
-					<a href="#">
-						<span class="flag-large ph"></span>
-						<span id="receive_curr" class="flag-btn-txt">PHP</span> <i class="icon-arrow"></i>
-					</a>
-				</div>
+			
+			<div class="input-inbox ns-en" style="float:left;">
+				
+				<select id="country" title="select country"  onchange="chageLangSelect()" >
+						<option selected="selected" value="">country</option>
+		            <c:forEach items="${list}" var="list">				
+						<option value="${list.customer_rate}/${list.receiveCType}">${list.receiveCountry}</option>
+					</c:forEach>
+				</select>
+				
+				<div id = "change_img" align="left"></div>					
+				
+				<input type="text"  id="countryvalue" class="labels" style ="border: 1px solid #FFFFFF; height: 20%;" value="" ></input>
 				
 			</div>
 		</div>
