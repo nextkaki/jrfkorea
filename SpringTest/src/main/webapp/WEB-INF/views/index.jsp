@@ -60,7 +60,7 @@
 		  width: 50%;
 		}
 		#right-box {
-			top: 20%;
+			top: 10%;
 		  float: right;
 		  width: 50%;
 		}
@@ -99,7 +99,7 @@
         <div id="header">
 
             <!-- Inner -->
-            <div class="inner" id= "left_i">
+            <div class="inner" id= "left_i" style="width:50%">
                 <header id="left_header">
                     <p style="font-family: 'Quicksand', sans-serif">Send Your Money Around</p>
                     <p style="font-family: 'Quicksand', sans-serif">The Globe With JRF</p>
@@ -109,8 +109,8 @@
                     <p style="font-family: 'Quicksand', sans-serif">No matter how far you are.</p>
                 </header>
             </div>
-            <div class="inner" id= "right-box" style="right: 5%;">
-                	<iframe src="Ratecalculator.do" frameborder="0" class="iframe" style="width:70%; height:60%;">
+            <div class="inner" id= "right-box" style="width:50%; margin-top: -70px;">
+                	<iframe src="Ratecalculator.do" frameborder="0" class="iframe" style="width:70%; height:100%; scrolling="no">
                 	</iframe>         
             </div>                
 
