@@ -110,7 +110,7 @@
                 </header>
             </div>
             <div class="inner" id= "right-box" style="right: 5%;">
-                	<iframe src="Ratecalculator.do" frameborder="0" class="iframe" style="width:80%; height:60%;">
+                	<iframe src="Ratecalculator.do" frameborder="0" class="iframe" style="width:70%; height:60%;">
                 	</iframe>         
             </div>                
 
