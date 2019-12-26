@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="countryMapper">
+
+	<select id="getCountryList" resultType="com.test.spring.model.CountriesDTO">
+
+		SELECT
+
+			[CountryID], [CountryName], [CountryCurrencyName], [CountryCurrencyShortName], [CountryEmail], [CountryFlagUrl]
+
+		FROM
+
+			[JRf_Korea_Uat].[dbo].[R_Countries]
+
+	</select>
+	
+	<select id="getTodayRateList" resultType="com.test.spring.model.CountriesDTO">
+		SELECT 
+		
+			[currencyId],[ExchangeRate],[DollarRate],[agentid],[receiveCountry],[receiveCType],[customer_rate]
+		
+		  FROM 
+		
+		  	[JRf_Korea_Uat].[dbo].[agentCurrencyRate]
+	</select>	
+	
+	<select id="getLastUpdateDate" resultType="String">
+		SELECT 
+		    
+		    MAX(convert(varchar, [update_ts], 111)) AS lastUpdate
+		  
+		  FROM 
+		    
+		    [JRf_Korea_Uat].[dbo].[agentCurrencyRate];
+	</select>	
+
+</mapper>
